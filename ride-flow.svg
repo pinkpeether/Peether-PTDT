@@ -1,0 +1,291 @@
+<svg width="1400" height="656" viewBox="0 0 1400 656" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- Gradients -->
+        <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FF6B9D;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#E84A7F;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FBBF24;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+        </linearGradient>
+
+        <linearGradient id="bnbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#F3BA2F;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#F0B90B;stop-opacity:1" />
+        </linearGradient>
+
+        <!-- Shadows -->
+        <filter id="shadow">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+            <feOffset dx="0" dy="2" result="offsetblur"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="1400" height="656" fill="#F9FAFB"/>
+
+    <!-- TOP ROW -->
+    
+    <!-- 1. Ride details notified (Top Left) -->
+    <g transform="translate(150, 80)">
+        <!-- Phone icon -->
+        <rect x="-40" y="-50" width="80" height="120" rx="8" fill="#1E3A8A" filter="url(#shadow)"/>
+        <rect x="-35" y="-42" width="70" height="100" rx="4" fill="#60A5FA"/>
+        <rect x="-30" y="-35" width="60" height="20" rx="2" fill="#FFFFFF" opacity="0.3"/>
+        <rect x="-30" y="-10" width="60" height="8" rx="1" fill="#FFFFFF" opacity="0.3"/>
+        <rect x="-30" y="3" width="40" height="8" rx="1" fill="#FFFFFF" opacity="0.3"/>
+        <rect x="-30" y="16" width="50" height="8" rx="1" fill="#FFFFFF" opacity="0.3"/>
+        <!-- Receipt icon -->
+        <rect x="20" y="-30" width="50" height="70" rx="4" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="2"/>
+        <rect x="25" y="-20" width="40" height="4" rx="1" fill="#9CA3AF"/>
+        <rect x="25" y="-12" width="30" height="3" rx="1" fill="#D1D5DB"/>
+        <rect x="25" y="-5" width="35" height="3" rx="1" fill="#D1D5DB"/>
+        <rect x="25" y="2" width="25" height="3" rx="1" fill="#D1D5DB"/>
+        
+        <text x="0" y="100" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#1F2937">Ride details notified</text>
+        <text x="0" y="120" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#1F2937">to nearby Pink Taxi drivers</text>
+    </g>
+
+    <!-- Arrow 1 -->
+    <path d="M 280,120 L 450,120" stroke="#9CA3AF" stroke-width="3" stroke-dasharray="8,6" fill="none" marker-end="url(#arrowGray)"/>
+    <marker id="arrowGray" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#9CA3AF" />
+    </marker>
+
+    <!-- 2. Ride fare bidding (Top Center) -->
+    <g transform="translate(550, 80)">
+        <!-- Gavel -->
+        <rect x="-35" y="10" width="70" height="12" rx="6" fill="#78350F"/>
+        <rect x="-8" y="-45" width="16" height="60" rx="3" fill="#92400E"/>
+        <ellipse cx="0" cy="-45" rx="25" ry="15" fill="#B45309"/>
+        <path d="M -15,-50 L -10,-40 L 10,-45 L 5,-55 Z" fill="#D97706"/>
+        
+        <text x="0" y="100" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#1F2937">Ride fare bidding</text>
+        <text x="0" y="120" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#1F2937">begins</text>
+    </g>
+
+    <!-- Arrow 2 -->
+    <path d="M 680,120 L 850,120" stroke="#9CA3AF" stroke-width="3" stroke-dasharray="8,6" fill="none" marker-end="url(#arrowGray)"/>
+
+    <!-- 3. Best bid chosen (Top Right-Center) -->
+    <g transform="translate(980, 80)">
+        <!-- Star trophy -->
+        <rect x="-25" y="25" width="50" height="15" rx="3" fill="#78350F"/>
+        <path d="M 0,-50 L 10,-20 L 40,-15 L 15,5 L 20,35 L 0,20 L -20,35 L -15,5 L -40,-15 L -10,-20 Z" fill="url(#goldGrad)" filter="url(#shadow)"/>
+        <circle cx="0" cy="-10" r="12" fill="#FBBF24" opacity="0.5"/>
+        
+        <text x="0" y="100" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#1F2937">Best bid is chosen</text>
+        <text x="0" y="120" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#1F2937">by the customer</text>
+    </g>
+
+    <!-- Arrow 3 -->
+    <path d="M 1110,120 L 1200,120" stroke="#9CA3AF" stroke-width="3" stroke-dasharray="8,6" fill="none" marker-end="url(#arrowGray)"/>
+
+    <!-- 4. Ride confirmation fee (Top Right) -->
+    <g transform="translate(1300, 80)">
+        <!-- Crypto coins -->
+        <circle cx="-15" cy="-25" r="32" fill="#1F2937" filter="url(#shadow)"/>
+        <circle cx="-15" cy="-25" r="28" fill="#2D3748"/>
+        <text x="-15" y="-18" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#FFFFFF">Ξ</text>
+        
+        <circle cx="20" cy="0" r="32" fill="url(#goldGrad)" filter="url(#shadow)"/>
+        <circle cx="20" cy="0" r="28" fill="#FBBF24"/>
+        <text x="20" y="8" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#1F2937">$</text>
+        
+        <text x="0" y="100" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#1F2937">Ride confirmation fee</text>
+        <text x="0" y="120" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#1F2937">paid</text>
+    </g>
+
+    <!-- MIDDLE ROW -->
+    
+    <!-- Customer (Left) - Clearly Feminine -->
+    <g transform="translate(200, 310)">
+        <!-- Head -->
+        <circle cx="0" cy="-50" r="22" fill="#F3B89C"/>
+        <!-- Eyes -->
+        <circle cx="-7" cy="-52" r="2" fill="#1F2937"/>
+        <circle cx="7" cy="-52" r="2" fill="#1F2937"/>
+        <!-- Smile -->
+        <path d="M -8,-44 Q 0,-40 8,-44" stroke="#1F2937" stroke-width="1.5" fill="none"/>
+        
+        <!-- Long flowing hair -->
+        <ellipse cx="0" cy="-58" rx="24" ry="16" fill="#4A2511"/>
+        <path d="M -22,-50 Q -26,-30 -20,-10" fill="#4A2511"/>
+        <path d="M 22,-50 Q 26,-30 20,-10" fill="#4A2511"/>
+        <ellipse cx="-20" cy="-5" rx="8" ry="25" fill="#4A2511"/>
+        <ellipse cx="20" cy="-5" rx="8" ry="25" fill="#4A2511"/>
+        
+        <!-- Neck -->
+        <rect x="-6" y="-28" width="12" height="10" fill="#E89B7E"/>
+        
+        <!-- Feminine body - dress shape -->
+        <ellipse cx="0" cy="-18" rx="18" ry="12" fill="#8B5CF6"/>
+        <!-- Waist -->
+        <ellipse cx="0" cy="-5" rx="14" ry="8" fill="#7C3AED"/>
+        <!-- A-line dress/skirt -->
+        <path d="M -14,-5 L -35,35 L 35,35 L 14,-5 Z" fill="#8B5CF6"/>
+        <!-- Arms -->
+        <ellipse cx="-22" cy="-8" rx="6" ry="20" fill="#E89B7E"/>
+        <ellipse cx="22" cy="-8" rx="6" ry="20" fill="#E89B7E"/>
+        
+        <text x="0" y="70" font-family="Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#1F2937">Customer</text>
+    </g>
+
+    <!-- Arrow down from customer -->
+    <path d="M 200,390 L 200,460" stroke="#9CA3AF" stroke-width="3" stroke-dasharray="8,6" fill="none" marker-end="url(#arrowGray)"/>
+
+    <!-- Pink Taxi (Center) -->
+    <g transform="translate(700, 295)">
+        <!-- Pink Taxi -->
+        <ellipse cx="0" cy="50" rx="80" ry="15" fill="#00000015"/>
+        <!-- Body -->
+        <rect x="-60" y="-10" width="120" height="40" rx="5" fill="url(#pinkGrad)" filter="url(#shadow)"/>
+        <!-- Windows -->
+        <rect x="-50" y="-25" width="45" height="20" rx="2" fill="#1E3A8A"/>
+        <rect x="5" y="-25" width="45" height="20" rx="2" fill="#1E3A8A"/>
+        <!-- Roof light -->
+        <rect x="-15" y="-35" width="30" height="10" rx="2" fill="#FCD34D"/>
+        <rect x="-12" y="-38" width="24" height="6" rx="1" fill="#FBBF24"/>
+        <!-- Wheels -->
+        <circle cx="-40" cy="30" r="12" fill="#1F2937"/>
+        <circle cx="-40" cy="30" r="8" fill="#4B5563"/>
+        <circle cx="40" cy="30" r="12" fill="#1F2937"/>
+        <circle cx="40" cy="30" r="8" fill="#4B5563"/>
+        <!-- Details -->
+        <rect x="-55" y="5" width="15" height="8" rx="2" fill="#FCD34D"/>
+        <rect x="40" y="5" width="15" height="8" rx="2" fill="#DC2626"/>
+        
+        <text x="0" y="100" font-family="Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#1F2937">Pink Taxi driver coming for pickup</text>
+    </g>
+
+    <!-- Arrow from pink taxi to driver -->
+    <path d="M 800,330 L 1050,330" stroke="#9CA3AF" stroke-width="3" stroke-dasharray="8,6" fill="none" marker-start="url(#arrowGrayLeft)"/>
+    <marker id="arrowGrayLeft" markerWidth="10" markerHeight="10" refX="1" refY="3" orient="auto">
+        <path d="M9,0 L9,6 L0,3 z" fill="#9CA3AF" />
+    </marker>
+
+    <!-- Pink Taxi Driver (Right) - Clearly Feminine -->
+    <g transform="translate(1220, 310)">
+        <!-- Head -->
+        <circle cx="0" cy="-50" r="22" fill="#F3B89C"/>
+        <!-- Eyes -->
+        <circle cx="-7" cy="-52" r="2" fill="#1F2937"/>
+        <circle cx="7" cy="-52" r="2" fill="#1F2937"/>
+        <!-- Smile -->
+        <path d="M -8,-44 Q 0,-40 8,-44" stroke="#1F2937" stroke-width="1.5" fill="none"/>
+        
+        <!-- Hair with side ponytail -->
+        <ellipse cx="0" cy="-58" rx="24" ry="16" fill="#3F2511"/>
+        <!-- Ponytail flowing to right -->
+        <ellipse cx="30" cy="-48" rx="10" ry="28" fill="#3F2511"/>
+        <path d="M 25,-48 Q 32,-65 35,-45" fill="#2D1A0A"/>
+        <!-- Pink hair tie -->
+        <ellipse cx="22" cy="-50" rx="6" ry="10" fill="#FF6B9D"/>
+        
+        <!-- Driver cap -->
+        <ellipse cx="0" cy="-62" rx="26" ry="8" fill="#1F2937"/>
+        <rect x="-18" y="-66" width="36" height="6" rx="2" fill="#374151"/>
+        
+        <!-- Neck -->
+        <rect x="-6" y="-28" width="12" height="10" fill="#E89B7E"/>
+        
+        <!-- Pink dress uniform with collar -->
+        <ellipse cx="0" cy="-18" rx="18" ry="12" fill="#FF6B9D"/>
+        <!-- White collar -->
+        <path d="M -15,-20 L -18,-12 L 0,-18 L 18,-12 L 15,-20 Z" fill="#FFFFFF"/>
+        <!-- Waist with belt -->
+        <ellipse cx="0" cy="-5" rx="14" ry="6" fill="#E84A7F"/>
+        <rect x="-14" y="-6" width="28" height="3" fill="#1F2937"/>
+        <!-- A-line skirt -->
+        <path d="M -14,-2 L -32,35 L 32,35 L 14,-2 Z" fill="#FF6B9D"/>
+        <!-- Arms -->
+        <ellipse cx="-22" cy="-8" rx="6" ry="20" fill="#E89B7E"/>
+        <ellipse cx="22" cy="-8" rx="6" ry="20" fill="#E89B7E"/>
+        <!-- Name badge -->
+        <rect x="16" y="-15" width="18" height="12" rx="2" fill="#FFFFFF" stroke="#FF6B9D" stroke-width="1.5"/>
+        <text x="25" y="-7" font-family="Arial, sans-serif" font-size="7" font-weight="700" text-anchor="middle" fill="#FF6B9D">PTDT</text>
+        
+        <text x="0" y="70" font-family="Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle" fill="#1F2937">Pink Taxi Driver</text>
+    </g>
+
+    <!-- Arrow down from driver -->
+    <path d="M 1220,390 L 1220,440" stroke="#9CA3AF" stroke-width="3" stroke-dasharray="8,6" fill="none" marker-end="url(#arrowGray)"/>
+    <text x="1150" y="420" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#059669">80% Driver's cut</text>
+
+    <!-- BOTTOM ROW -->
+    
+    <!-- Ride (Bottom Left) -->
+    <g transform="translate(200, 530)">
+        <!-- Pink Taxi (front view) -->
+        <ellipse cx="0" cy="40" rx="70" ry="12" fill="#00000015"/>
+        <!-- Body -->
+        <rect x="-55" y="-15" width="110" height="50" rx="8" fill="url(#pinkGrad)" filter="url(#shadow)"/>
+        <!-- Windshield -->
+        <path d="M -45,-10 L -40,-25 L 40,-25 L 45,-10 Z" fill="#1E3A8A"/>
+        <!-- Roof light -->
+        <rect x="-12" y="-30" width="24" height="8" rx="2" fill="#FBBF24"/>
+        <!-- Headlights -->
+        <rect x="-50" y="10" width="15" height="8" rx="2" fill="#FCD34D"/>
+        <rect x="35" y="10" width="15" height="8" rx="2" fill="#FCD34D"/>
+        <!-- Wheels -->
+        <circle cx="-40" cy="35" r="10" fill="#1F2937"/>
+        <circle cx="40" cy="35" r="10" fill="#1F2937"/>
+        <!-- Grille -->
+        <rect x="-20" y="20" width="40" height="6" rx="1" fill="#9CA3AF"/>
+        
+        <text x="0" y="80" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#1F2937">Ride</text>
+    </g>
+
+    <!-- Arrow -->
+    <path d="M 300,550 L 430,550" stroke="#9CA3AF" stroke-width="3" stroke-dasharray="8,6" fill="none" marker-end="url(#arrowGray)"/>
+
+    <!-- Destination Arrived -->
+    <g transform="translate(570, 530)">
+        <!-- Location pin with checkmark -->
+        <path d="M 0,-40 Q -25,-40 -25,-15 Q -25,5 0,40 Q 25,5 25,-15 Q 25,-40 0,-40 Z" fill="#10B981" filter="url(#shadow)"/>
+        <circle cx="0" cy="-15" r="18" fill="#FFFFFF"/>
+        <path d="M -8,-15 L -3,-8 L 10,-23" stroke="#10B981" stroke-width="4" fill="none" stroke-linecap="round"/>
+        
+        <text x="0" y="80" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#1F2937">Destination Arrived</text>
+    </g>
+
+    <!-- Arrow -->
+    <path d="M 670,550 L 800,550" stroke="#9CA3AF" stroke-width="3" stroke-dasharray="8,6" fill="none" marker-end="url(#arrowGray)"/>
+
+    <!-- Payment -->
+    <g transform="translate(940, 530)">
+        <!-- PTDT Coin (prominent text) -->
+        <circle cx="-30" cy="-10" r="38" fill="url(#pinkGrad)" filter="url(#shadow)"/>
+        <circle cx="-30" cy="-10" r="34" fill="#FF6B9D"/>
+        <text x="-30" y="0" font-family="Arial, sans-serif" font-size="18" font-weight="900" text-anchor="middle" fill="#FFFFFF">PTDT</text>
+        
+        <!-- BNB Coin -->
+        <circle cx="30" cy="5" r="38" fill="url(#bnbGrad)" filter="url(#shadow)"/>
+        <circle cx="30" cy="5" r="34" fill="#F0B90B"/>
+        <text x="30" y="14" font-family="Arial, sans-serif" font-size="18" font-weight="900" text-anchor="middle" fill="#1F2937">BNB</text>
+        
+        <text x="0" y="80" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#1F2937">Payment</text>
+    </g>
+
+    <!-- Arrow to community (split) -->
+    <path d="M 1040,550 L 1100,550" stroke="#9CA3AF" stroke-width="3" stroke-dasharray="8,6" fill="none"/>
+    <path d="M 1100,550 L 1100,480" stroke="#9CA3AF" stroke-width="3" stroke-dasharray="8,6" fill="none" marker-end="url(#arrowGray)"/>
+    <path d="M 1100,550 L 1170,550" stroke="#9CA3AF" stroke-width="3" stroke-dasharray="8,6" fill="none" marker-end="url(#arrowGray)"/>
+
+    <!-- Community Fund -->
+    <g transform="translate(1260, 530)">
+        <rect x="-65" y="-30" width="130" height="60" rx="8" fill="#FFFFFF" stroke="#9CA3AF" stroke-width="3" filter="url(#shadow)"/>
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="#1F2937">Community</text>
+        <text x="0" y="50" font-family="Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#059669">9% Community Fund</text>
+    </g>
+
+</svg>

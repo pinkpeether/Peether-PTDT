@@ -1,0 +1,106 @@
+<svg width="900" height="320" viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- Gradients -->
+        <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FF6B9D;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#E84A7F;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="btcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#F7931A;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#E67E00;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="ethGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#627EEA;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#4B68C9;stop-opacity:1" />
+        </linearGradient>
+
+        <!-- Shadow filter -->
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+            <feOffset dx="0" dy="4" result="offsetblur"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.15"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="900" height="320" fill="#FFFFFF"/>
+
+    <!-- PTDT Card -->
+    <g transform="translate(30, 20)">
+        <!-- Card background with pink border -->
+        <rect x="0" y="0" width="260" height="280" rx="20" fill="linear-gradient(135deg, #FFF5F8 0%, #FFFFFF 100%)" filter="url(#shadow)"/>
+        <rect x="0" y="0" width="260" height="280" rx="20" fill="#FFF5F8" stroke="#FF6B9D" stroke-width="2"/>
+        
+        <!-- Top accent line (hover effect static) -->
+        <rect x="0" y="0" width="260" height="5" rx="20" fill="url(#pinkGrad)"/>
+        <rect x="0" y="0" width="260" height="5" fill="url(#pinkGrad)" clip-path="url(#topClip)"/>
+        
+        <!-- Logo -->
+        <text x="130" y="60" font-family="Arial, sans-serif" font-size="48" text-anchor="middle" fill="#1A1A2E">🚗</text>
+        
+        <!-- Token Name -->
+        <text x="130" y="100" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#1A1A2E">PTDT</text>
+        
+        <!-- Label -->
+        <text x="130" y="130" font-family="Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#9CA3AF" letter-spacing="1">TOTAL SUPPLY</text>
+        
+        <!-- Supply Number -->
+        <text x="130" y="175" font-family="Arial, sans-serif" font-size="36" font-weight="800" text-anchor="middle" fill="url(#pinkGrad)">100,000</text>
+        
+        <!-- Badge -->
+        <rect x="65" y="200" width="130" height="32" rx="16" fill="url(#pinkGrad)"/>
+        <text x="130" y="222" font-family="Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle" fill="#FFFFFF" letter-spacing="1">ULTRA-SCARCE</text>
+    </g>
+
+    <!-- Bitcoin Card -->
+    <g transform="translate(320, 20)">
+        <!-- Card background -->
+        <rect x="0" y="0" width="260" height="280" rx="20" fill="#FFFFFF" filter="url(#shadow)"/>
+        <rect x="0" y="0" width="260" height="280" rx="20" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+        
+        <!-- Logo -->
+        <text x="130" y="65" font-family="Arial, sans-serif" font-size="48" text-anchor="middle" fill="#F7931A">₿</text>
+        
+        <!-- Token Name -->
+        <text x="130" y="100" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#1A1A2E">Bitcoin</text>
+        
+        <!-- Label -->
+        <text x="130" y="130" font-family="Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#9CA3AF" letter-spacing="1">MAX SUPPLY</text>
+        
+        <!-- Supply Number -->
+        <text x="130" y="175" font-family="Arial, sans-serif" font-size="36" font-weight="800" text-anchor="middle" fill="url(#btcGrad)">21,000,000</text>
+        
+        <!-- Subtitle -->
+        <text x="130" y="220" font-family="Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#9CA3AF">210× more supply</text>
+    </g>
+
+    <!-- Ethereum Card -->
+    <g transform="translate(610, 20)">
+        <!-- Card background -->
+        <rect x="0" y="0" width="260" height="280" rx="20" fill="#FFFFFF" filter="url(#shadow)"/>
+        <rect x="0" y="0" width="260" height="280" rx="20" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+        
+        <!-- Logo -->
+        <text x="130" y="65" font-family="Arial, sans-serif" font-size="48" text-anchor="middle" fill="#627EEA">Ξ</text>
+        
+        <!-- Token Name -->
+        <text x="130" y="100" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle" fill="#1A1A2E">Ethereum</text>
+        
+        <!-- Label -->
+        <text x="130" y="130" font-family="Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#9CA3AF" letter-spacing="1">TOTAL SUPPLY</text>
+        
+        <!-- Supply Number -->
+        <text x="130" y="180" font-family="Arial, sans-serif" font-size="48" font-weight="800" text-anchor="middle" fill="url(#ethGrad)">∞</text>
+        
+        <!-- Subtitle -->
+        <text x="130" y="220" font-family="Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#9CA3AF">Unlimited supply</text>
+    </g>
+</svg>

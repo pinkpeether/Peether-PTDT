@@ -1,0 +1,158 @@
+<svg width="1400" height="700" viewBox="0 0 1400 700" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- Background Gradients -->
+        <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#1a0a1f;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#2d1340;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#1a0a1f;stop-opacity:1" />
+        </linearGradient>
+        
+        <radialGradient id="pinkGlow" cx="50%" cy="50%">
+            <stop offset="0%" style="stop-color:#FF6B9D;stop-opacity:0.3" />
+            <stop offset="100%" style="stop-color:#FF6B9D;stop-opacity:0" />
+        </radialGradient>
+        
+        <radialGradient id="tealGlow" cx="50%" cy="50%">
+            <stop offset="0%" style="stop-color:#2DD4BF;stop-opacity:0.2" />
+            <stop offset="100%" style="stop-color:#2DD4BF;stop-opacity:0" />
+        </radialGradient>
+
+        <!-- 3D Ring Gradients -->
+        <linearGradient id="ring1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FF6B9D;stop-opacity:0.8" />
+            <stop offset="50%" style="stop-color:#E84A7F;stop-opacity:0.6" />
+            <stop offset="100%" style="stop-color:#C43867;stop-opacity:0.9" />
+        </linearGradient>
+
+        <linearGradient id="ring2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#2DD4BF;stop-opacity:0.7" />
+            <stop offset="50%" style="stop-color:#14B8A6;stop-opacity:0.5" />
+            <stop offset="100%" style="stop-color:#0D9488;stop-opacity:0.8" />
+        </linearGradient>
+
+        <linearGradient id="ring3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#A78BFA;stop-opacity:0.7" />
+            <stop offset="50%" style="stop-color:#8B5CF6;stop-opacity:0.5" />
+            <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:0.8" />
+        </linearGradient>
+
+        <!-- Filters -->
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <filter id="shadow">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+            <feOffset dx="0" dy="4" result="offsetblur"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.4"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+
+        <!-- PTDT Logo gradient from the SVG -->
+        <linearGradient id="ptdtPinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#fb0b8c;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#fb068c;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+
+    <!-- Background -->
+    <rect width="1400" height="700" fill="url(#bgGrad)"/>
+    
+    <!-- Glow effects -->
+    <ellipse cx="300" cy="200" rx="400" ry="300" fill="url(#pinkGlow)"/>
+    <ellipse cx="1100" cy="500" rx="500" ry="350" fill="url(#tealGlow)"/>
+    
+    <!-- Subtle grid pattern -->
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+        <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#FF6B9D" stroke-width="0.3" opacity="0.1"/>
+    </pattern>
+    <rect width="1400" height="700" fill="url(#grid)"/>
+
+    <!-- 3D Geometric Elements (Right Side) -->
+    <g transform="translate(900, 250)">
+        <!-- Large outer ring (pink) -->
+        <ellipse cx="150" cy="100" rx="180" ry="50" fill="none" stroke="url(#ring1Grad)" stroke-width="8" opacity="0.6" filter="url(#glow)"/>
+        <ellipse cx="150" cy="100" rx="180" ry="50" fill="none" stroke="url(#ring1Grad)" stroke-width="3" opacity="0.9"/>
+        <path d="M -30,100 Q 150,50 330,100 L 330,120 Q 150,70 -30,120 Z" fill="url(#ring1Grad)" opacity="0.3"/>
+        
+        <!-- Middle ring (teal) -->
+        <g transform="rotate(35 150 150)">
+            <ellipse cx="150" cy="150" rx="140" ry="40" fill="none" stroke="url(#ring2Grad)" stroke-width="6" opacity="0.7" filter="url(#glow)"/>
+            <ellipse cx="150" cy="150" rx="140" ry="40" fill="none" stroke="url(#ring2Grad)" stroke-width="2" opacity="0.9"/>
+            <path d="M 10,150 Q 150,110 290,150 L 290,165 Q 150,125 10,165 Z" fill="url(#ring2Grad)" opacity="0.3"/>
+        </g>
+        
+        <!-- Inner ring (purple) -->
+        <g transform="rotate(-25 150 200)">
+            <ellipse cx="150" cy="200" rx="100" ry="30" fill="none" stroke="url(#ring3Grad)" stroke-width="5" opacity="0.8" filter="url(#glow)"/>
+            <ellipse cx="150" cy="200" rx="100" ry="30" fill="none" stroke="url(#ring3Grad)" stroke-width="2" opacity="0.9"/>
+            <path d="M 50,200 Q 150,170 250,200 L 250,212 Q 150,182 50,212 Z" fill="url(#ring3Grad)" opacity="0.3"/>
+        </g>
+
+        <!-- PTDT Logo Circle (center) -->
+        <g transform="translate(80, 50)">
+            <!-- Outer glow circle -->
+            <circle cx="70" cy="70" r="85" fill="#2DD4BF" opacity="0.3" filter="url(#glow)"/>
+            
+            <!-- Main PTDT logo scaled up -->
+            <g transform="translate(15, 15) scale(3.2)">
+                <circle cx="14.35" cy="14.4" r="12.27" fill="#fff" opacity="0.1"/>
+                <circle cx="14.35" cy="14.4" r="12.27" fill="#2DD4BF" stroke="#FFFFFF" stroke-width="0.46"/>
+                <circle cx="14.35" cy="14.4" r="10.66" fill="#1a0a1f"/>
+                
+                <!-- PTDT Pink Symbol -->
+                <path d="M15.14,12.47c-.21-.34,2.18-3.91,4.97-4.8-3.22,.47-5.62,2.79-5.76,2.93,0,0-.02,.01-.02,.01,0,0,.01,0,.02-.01,0,0,.01,0,.02,.01h-.02c.64-.63,.45-.1,0,.85-.45-.95-.64-1.48,0-.86-.14-.15-2.55-2.46-5.76-2.93,2.79,.89,5.18,4.46,4.97,4.8-.57,.94-1.12,2.19-1.21,3.55-.03,.14-.05,.26-.05,.36,0,3.18,2.03,5.76,2.03,5.76,0,0,0,0,.02-.01,0,0,.01,.01,.01,.01,0,0,2.03-2.57,2.03-5.76,0-.1-.01-.22-.04-.36-.09-1.36-.63-2.61-1.21-3.55" fill="#FF6B9D" filter="url(#glow)"/>
+                <circle cx="14.35" cy="8.26" r="1.39" fill="#FF6B9D"/>
+            </g>
+        </g>
+
+        <!-- Floating particles/diamonds -->
+        <g opacity="0.6">
+            <polygon points="50,280 60,290 50,300 40,290" fill="#FF6B9D" filter="url(#glow)"/>
+            <polygon points="320,40 335,50 320,60 305,50" fill="#2DD4BF" filter="url(#glow)"/>
+            <polygon points="280,320 292,330 280,340 268,330" fill="#A78BFA" filter="url(#glow)"/>
+        </g>
+    </g>
+
+    <!-- Branding (Top Left) -->
+    <g transform="translate(80, 60)">
+        <!-- PTDT text logo -->
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#FFFFFF" letter-spacing="2">
+            PTDT
+        </text>
+        <text x="110" y="0" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#FFFFFF" opacity="0.6">
+            |
+        </text>
+        <text x="140" y="0" font-family="Arial, sans-serif" font-size="36" font-weight="600" fill="#2DD4BF">
+            Peether
+        </text>
+    </g>
+
+    <!-- Main Text Content (Left Side) -->
+    <g transform="translate(80, 240)">
+        <!-- Main heading -->
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="68" font-weight="700" fill="#FFFFFF" filter="url(#shadow)">
+            <tspan x="0" dy="0">Empowering</tspan>
+            <tspan x="0" dy="80">Women Drivers</tspan>
+            <tspan x="0" dy="80">Through</tspan>
+            <tspan x="0" dy="80" fill="#2DD4BF">Blockchain</tspan>
+        </text>
+    </g>
+
+    <!-- Subtitle (Bottom Left) -->
+    <text x="80" y="630" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#FFFFFF" opacity="0.7">
+        Economic freedom for women drivers in emerging markets
+    </text>
+
+    <!-- Decorative accent line -->
+    <rect x="80" y="210" width="120" height="4" fill="url(#ring1Grad)" rx="2"/>
+</svg>

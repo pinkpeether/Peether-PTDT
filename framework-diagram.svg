@@ -1,0 +1,224 @@
+<svg width="1400" height="650" viewBox="0 0 1400 650" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <!-- Gradients -->
+        <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FF6B9D;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#E84A7F;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#2DD4BF;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#14B8A6;stop-opacity:1" />
+        </linearGradient>
+        
+        <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#A78BFA;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+        </linearGradient>
+
+        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FBBF24;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+        </linearGradient>
+
+        <!-- Arrow markers -->
+        <marker id="arrowPink" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#FF6B9D" />
+        </marker>
+        
+        <marker id="arrowTeal" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#2DD4BF" />
+        </marker>
+
+        <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#8B5CF6" />
+        </marker>
+        
+        <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#F59E0B" />
+        </marker>
+
+        <!-- Filters for shadows -->
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+            <feOffset dx="0" dy="2" result="offsetblur"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.3"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <rect width="1400" height="650" fill="none"/>
+    
+    <!-- Title -->
+    <text x="700" y="50" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#1a1a2e">Blockchain-based Transportation Wallet Framework</text>
+
+    <!-- Governmental Authorities (Top Left) -->
+    <g transform="translate(200, 120)">
+        <circle cx="0" cy="0" r="60" fill="url(#goldGrad)" opacity="0.2"/>
+        <circle cx="0" cy="0" r="55" fill="url(#goldGrad)" filter="url(#shadow)"/>
+        <rect x="-25" y="-15" width="50" height="40" fill="#FFFFFF" opacity="0.3" rx="2"/>
+        <rect x="-20" y="-10" width="15" height="15" fill="#FFFFFF" opacity="0.5"/>
+        <rect x="5" y="-10" width="15" height="15" fill="#FFFFFF" opacity="0.5"/>
+        <rect x="-20" y="10" width="15" height="15" fill="#FFFFFF" opacity="0.5"/>
+        <rect x="5" y="10" width="15" height="15" fill="#FFFFFF" opacity="0.5"/>
+        <text x="0" y="95" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#404040">Governmental</text>
+        <text x="0" y="115" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#404040">Authorities</text>
+    </g>
+
+    <!-- Banks (Top Right) -->
+    <g transform="translate(1200, 120)">
+        <circle cx="0" cy="0" r="60" fill="url(#tealGrad)" opacity="0.2"/>
+        <circle cx="0" cy="0" r="55" fill="url(#tealGrad)" filter="url(#shadow)"/>
+        <rect x="-30" y="-20" width="60" height="45" fill="#FFFFFF" opacity="0.3" rx="3"/>
+        <rect x="-25" y="-25" width="50" height="8" fill="#FFFFFF" opacity="0.5"/>
+        <rect x="-20" y="-10" width="15" height="20" fill="#FFFFFF" opacity="0.5"/>
+        <rect x="5" y="-10" width="15" height="20" fill="#FFFFFF" opacity="0.5"/>
+        <rect x="-8" y="15" width="16" height="10" fill="#F59E0B"/>
+        <text x="0" y="95" font-family="Arial, sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="#404040">Banks</text>
+    </g>
+
+    <!-- Mobile Application (Center) -->
+    <g transform="translate(520, 270)">
+        <rect x="-70" y="-100" width="140" height="200" rx="15" fill="url(#tealGrad)" filter="url(#shadow)"/>
+        <rect x="-65" y="-95" width="130" height="190" rx="12" fill="#FFFFFF"/>
+        <rect x="-55" y="-75" width="110" height="80" rx="8" fill="#F0F9FF"/>
+        <rect x="-45" y="-60" width="90" height="55" rx="6" fill="url(#pinkGrad)"/>
+        <circle cx="-25" cy="-40" r="8" fill="#FBBF24" opacity="0.8"/>
+        <rect x="-40" y="-25" width="30" height="4" fill="#FFFFFF" opacity="0.6" rx="2"/>
+        <rect x="-40" y="-18" width="45" height="3" fill="#FFFFFF" opacity="0.5" rx="1"/>
+        <rect x="-50" y="20" width="100" height="40" rx="6" fill="#F0F9FF"/>
+        <circle cx="-25" cy="40" r="8" fill="url(#pinkGrad)"/>
+        <circle cx="0" cy="40" r="8" fill="url(#tealGrad)"/>
+        <circle cx="25" cy="40" r="8" fill="url(#purpleGrad)"/>
+        <text x="0" y="130" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#1a1a2e">Mobile</text>
+        <text x="0" y="150" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#1a1a2e">Application</text>
+    </g>
+
+    <!-- Web Portal (Center Right) -->
+    <g transform="translate(880, 270)">
+        <rect x="-80" y="-70" width="160" height="120" rx="8" fill="url(#purpleGrad)" opacity="0.2" filter="url(#shadow)"/>
+        <rect x="-75" y="-65" width="150" height="110" rx="6" fill="url(#purpleGrad)"/>
+        <rect x="-70" y="-60" width="140" height="100" rx="4" fill="#FFFFFF"/>
+        <rect x="-60" y="-50" width="120" height="8" rx="2" fill="url(#pinkGrad)" opacity="0.3"/>
+        <rect x="-60" y="-35" width="120" height="6" rx="1" fill="#E5E7EB"/>
+        <rect x="-60" y="-25" width="80" height="6" rx="1" fill="#E5E7EB"/>
+        <rect x="-60" y="-15" width="120" height="6" rx="1" fill="#E5E7EB"/>
+        <rect x="-60" y="-5" width="90" height="6" rx="1" fill="#E5E7EB"/>
+        <rect x="-60" y="10" width="50" height="20" rx="4" fill="url(#tealGrad)"/>
+        <text x="0" y="85" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#1a1a2e">Web Portal</text>
+    </g>
+
+    <!-- Passenger (Left) -->
+    <g transform="translate(100, 270)">
+        <circle cx="0" cy="-10" r="30" fill="url(#pinkGrad)" filter="url(#shadow)"/>
+        <circle cx="0" cy="-10" r="20" fill="#FFFFFF" opacity="0.3"/>
+        <circle cx="0" cy="-15" r="8" fill="#FFFFFF"/>
+        <path d="M -25,20 Q 0,35 25,20 L 15,50 L -15,50 Z" fill="url(#pinkGrad)" filter="url(#shadow)"/>
+        <text x="0" y="85" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#1a1a2e">Passenger</text>
+    </g>
+
+    <!-- Service Providers (Right) -->
+    <g transform="translate(1300, 270)">
+        <circle cx="0" cy="-10" r="30" fill="url(#purpleGrad)" filter="url(#shadow)"/>
+        <circle cx="0" cy="-10" r="20" fill="#FFFFFF" opacity="0.3"/>
+        <circle cx="0" cy="-15" r="8" fill="#FFFFFF"/>
+        <path d="M -25,20 Q 0,35 25,20 L 15,50 L -15,50 Z" fill="url(#purpleGrad)" filter="url(#shadow)"/>
+        <text x="0" y="85" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" fill="#1a1a2e">Service Providers</text>
+    </g>
+
+    <!-- On-Chain Section (Bottom Left) -->
+    <g transform="translate(350, 545)">
+        <!-- Dotted border -->
+        <rect x="-150" y="-55" width="300" height="110" rx="12" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-dasharray="8,4"/>
+        <!-- Label box -->
+        <rect x="-150" y="-80" width="90" height="28" rx="4" fill="#1a1a2e"/>
+        <text x="-105" y="-60" font-family="Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#FFFFFF">On-Chain</text>
+        
+        <!-- Smart Contract -->
+        <g transform="translate(-70, 0)">
+            <rect x="-40" y="-35" width="80" height="70" rx="8" fill="url(#purpleGrad)" filter="url(#shadow)"/>
+            <rect x="-30" y="-22" width="60" height="6" rx="2" fill="#FFFFFF" opacity="0.8"/>
+            <rect x="-30" y="-12" width="45" height="6" rx="2" fill="#FFFFFF" opacity="0.6"/>
+            <rect x="-30" y="-2" width="50" height="6" rx="2" fill="#FFFFFF" opacity="0.6"/>
+            <circle cx="15" cy="18" r="12" fill="#FBBF24"/>
+            <text x="15" y="23" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a2e">$</text>
+            <text x="0" y="55" font-family="Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#404040">Smart Contract</text>
+        </g>
+        
+        <!-- BSC Blockchain -->
+        <g transform="translate(70, 0)">
+            <circle cx="0" cy="0" r="35" fill="#F0B90B" filter="url(#shadow)"/>
+            <circle cx="0" cy="0" r="26" fill="#1a1a2e"/>
+            <path d="M 0,-12 L 0,-4 M -8,0 L 8,0 M 0,4 L 0,12 M -6,-6 L 6,6 M -6,6 L 6,-6" stroke="#F0B90B" stroke-width="3" fill="none"/>
+            <text x="0" y="55" font-family="Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#404040">BSC Blockchain</text>
+        </g>
+    </g>
+
+    <!-- Off-Chain Section (Bottom Right) -->
+    <g transform="translate(1050, 545)">
+        <!-- Dotted border -->
+        <rect x="-150" y="-55" width="300" height="110" rx="12" fill="none" stroke="#2DD4BF" stroke-width="2" stroke-dasharray="8,4"/>
+        <!-- Label box -->
+        <rect x="-150" y="-80" width="90" height="28" rx="4" fill="#1a1a2e"/>
+        <text x="-105" y="-60" font-family="Arial, sans-serif" font-size="16" font-weight="700" text-anchor="middle" fill="#FFFFFF">Off-Chain</text>
+        
+        <!-- NFC -->
+        <g transform="translate(-70, 0)">
+            <rect x="-35" y="-35" width="70" height="70" rx="8" fill="url(#tealGrad)" filter="url(#shadow)"/>
+            <rect x="-25" y="-25" width="50" height="50" rx="4" fill="#FFFFFF"/>
+            <text x="0" y="-2" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#1a1a2e">NFC</text>
+            <path d="M -12,8 Q 0,16 12,8" stroke="#2DD4BF" stroke-width="2" fill="none"/>
+            <path d="M -8,14 Q 0,19 8,14" stroke="#2DD4BF" stroke-width="2" fill="none"/>
+            <text x="0" y="55" font-family="Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#404040">NFC</text>
+        </g>
+        
+        <!-- Data Storage -->
+        <g transform="translate(70, 0)">
+            <ellipse cx="0" cy="-18" rx="32" ry="10" fill="url(#purpleGrad)" filter="url(#shadow)"/>
+            <rect x="-32" y="-18" width="64" height="28" fill="url(#purpleGrad)"/>
+            <ellipse cx="0" cy="10" rx="32" ry="10" fill="#8B5CF6"/>
+            <ellipse cx="0" cy="-4" rx="32" ry="10" fill="#A78BFA"/>
+            <text x="0" y="55" font-family="Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#404040">Data Storage</text>
+        </g>
+    </g>
+
+    <!-- ARROWS -->
+    
+    <!-- Passenger to Mobile App -->
+    <line x1="140" y1="270" x2="440" y2="270" stroke="#FF6B9D" stroke-width="3" marker-end="url(#arrowPink)"/>
+    <text x="290" y="258" font-family="Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#FF6B9D">Ride</text>
+
+    <!-- Mobile App to Web Portal (bidirectional) -->
+    <line x1="600" y1="265" x2="790" y2="265" stroke="#8B5CF6" stroke-width="3" marker-end="url(#arrowPurple)"/>
+    <line x1="790" y1="275" x2="600" y2="275" stroke="#8B5CF6" stroke-width="3" marker-end="url(#arrowPurple)"/>
+
+    <!-- Web Portal to Service Providers -->
+    <line x1="970" y1="270" x2="1260" y2="270" stroke="#8B5CF6" stroke-width="3" marker-end="url(#arrowPurple)"/>
+    <text x="1115" y="258" font-family="Arial, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#8B5CF6">Manage Rides</text>
+
+    <!-- Gov Authorities to Mobile App -->
+    <path d="M 240,175 Q 380,210 470,230" stroke="#F59E0B" stroke-width="3" fill="none" marker-end="url(#arrowGold)"/>
+    <text x="320" y="185" font-family="Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#F59E0B">Identity</text>
+    <text x="320" y="202" font-family="Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#F59E0B">authentication</text>
+
+    <!-- Banks to Web Portal -->
+    <path d="M 1160,175 Q 1020,210 930,230" stroke="#2DD4BF" stroke-width="3" fill="none" marker-end="url(#arrowTeal)"/>
+    <text x="1080" y="185" font-family="Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#14B8A6">Financial</text>
+    <text x="1080" y="202" font-family="Arial, sans-serif" font-size="13" font-weight="600" text-anchor="middle" fill="#14B8A6">Transactions</text>
+
+    <!-- Mobile App to On-Chain -->
+    <line x1="490" y1="420" x2="380" y2="485" stroke="#8B5CF6" stroke-width="3" marker-end="url(#arrowPurple)"/>
+
+    <!-- Web Portal to Off-Chain -->
+    <line x1="910" y1="355" x2="1000" y2="485" stroke="#2DD4BF" stroke-width="3" marker-end="url(#arrowTeal)"/>
+
+    <!-- Bottom connecting line -->
+    <line x1="500" y1="545" x2="900" y2="545" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="6,4"/>
+
+</svg>
