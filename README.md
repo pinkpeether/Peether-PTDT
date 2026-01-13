@@ -32,7 +32,7 @@ contract.methods.balanceOf('YOUR_WALLET_ADDRESS').call().then(console.log);
 ### Key Statistics
 - 💼 **3,000+ Active Drivers** across 7 countries
 - 🚗 **500,000+ Rides Completed** since 2006
-- 💎 **Only 100,000 Tokens** (2,100x scarcer than Bitcoin)
+- 💎 **Only 100,000 Tokens** (210x scarcer than Bitcoin)
 - 🌍 **7 Countries:** Egypt, Australia, Dubai, South Africa, Pakistan, Nigeria, India
 - 📈 **15-20% Higher Income** for drivers vs traditional platforms
 
@@ -42,7 +42,7 @@ contract.methods.balanceOf('YOUR_WALLET_ADDRESS').call().then(console.log);
 - **Total Supply:** 100,000 PTDT (fixed, no minting possible)
 - **Private Sale:** 5,000 PTDT (5%)
 - **Liquidity Pool:** 5,000 PTDT (5%)
-- **Result:** 2,100x scarcer than Bitcoin
+- **Result:** 210x scarcer than Bitcoin
 
 ### Anti-Whale Protection
 - **Private Sale Limit:** 500 USDT per wallet (0.5% max)
