@@ -224,7 +224,7 @@ This project is licensed under the MIT License - see [LICENSE](./LICENSE) file f
 - 💰 **DApp:** [dapp.ptdt.taxi](https://dapp.ptdt.taxi)
 - 📊 **BSCScan:** [View Token](https://bscscan.com/token/0x66c6Fc5E7F99272134a52DF9E88D94eD83E89278)
 - 📝 **Medium:** [medium.com/@ptdt](https://medium.com/@ptdt)
-- 💬 - 💬 💬 **Community:** [Telegram Bot: @PeetherPTDT_bot] https://t.me/PeetherPTDT_bot | [Join Group] https://t.me/PeetherPTDT
+- 💬 **Community:** [Telegram Bot: @PeetherPTDT_bot] https://t.me/PeetherPTDT_bot | [Join Group] https://t.me/PeetherPTDT
 - 📄 **Whitepaper:** [ptdt.taxi/whitepaper.html](https://ptdt.taxi/whitepaper.html)
 
 ## 📧 Contact
