@@ -11,6 +11,24 @@
 
 Peether (PTDT) is an ultra-scarce BEP-20 utility token built on Binance Smart Chain with only **100,000 tokens in existence**, designed to transform the economics of ride-hailing services. Unlike traditional platforms that charge 25-30% fees, PTDT operates on a sustainable 5% model while providing instant settlements and transparent on-chain transactions.
 
+## 🚀 Getting Started
+
+### Deploy Locally (For Testing)
+1. Clone the repo: `git clone https://github.com/pinkpeether/Peether-PTDT.git`
+2. Install dependencies: `npm install` (or use Hardhat/Truffle)
+3. Compile contracts: `npx hardhat compile`
+4. Test: `npx hardhat test`
+
+### Interact with Contracts
+```javascript
+// Example: Check balance via Web3.js
+const Web3 = require('web3');
+const web3 = new Web3('https://bsc-dataseed.binance.org/');
+const tokenAddress = '0x66c6Fc5E7F99272134a52DF9E88D94eD83E89278';
+const ABI = [ /* Paste minimal ABI here */ ];
+const contract = new web3.eth.Contract(ABI, tokenAddress);
+contract.methods.balanceOf('YOUR_WALLET_ADDRESS').call().then(console.log);
+
 ### Key Statistics
 - 💼 **3,000+ Active Drivers** across 7 countries
 - 🚗 **500,000+ Rides Completed** since 2006
