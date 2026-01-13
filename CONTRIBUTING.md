@@ -15,4 +15,4 @@ Welcome! We're building a fair ride-sharing token—contributions empower women 
 - Different language translations for README
 - Bot features for staking calc
 
-Report issues first. Thanks for joining the Pink Taxi revolution!
+Report issues first. Thanks for joining the Pink Taxi Blockchain revolution!
